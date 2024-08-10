@@ -83,13 +83,12 @@ import androidx.compose.ui.unit.sp
 
             when(isDeniedPermanently){
                 false->{
-                    return "This app needs access to your microphone so that your friends " +
-                            "can hear you in a call."
+                    return "This app needs access to your microphone to record audio"
                 }
 
                 true->{
-                return "It seems you permanently declined microphone permission. " +
-                        "You can go to the app settings to grant it."
+                return "It looks like you permanently declined microphone permission. " +
+                        " go to the app settings to change it."
                 }
             }
         }
